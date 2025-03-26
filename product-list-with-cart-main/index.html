@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product list with cart</title>
+
+</head>
+<body style="background-color: #F2D2BD">
+
+<div class="flex">
+  <main class="flex-1 bg-gray-200 p-4">
+
+    <header class="flex justify-between">
+      Desserts12
+      <div class="test relative">
+      <img src="./assets/images/cart.png" class="w-10 h-10">
+      <span id="cart-count" class="absolute top-0 right-0 bg-red-500 text-white text-xs font-bold w-5 h-5 flex items-center justify-center rounded-full">0</span>
+    </div>
+    </header>
+
+    <div class="products-container grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+    </div> 
+
+  </main>
+
+  <aside class="quantity w-100 h-100 bg-gray-300 p-4">
+    <h3>Your Cart (<!-- Quantity -->)</h3>
+    <img src="./assets/images/illustration-empty-cart.svg" class="empty-cart">
+    <div id="cart-items" class="list-disc pl-5">
+
+    </div>
+    <p>Your added items will appear here</p>
+  </aside>
+</div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Shrijith</a>.
+  </div>
+
+
+  <script src="test.js" defer>
+  </script>
+</body>
+</html>
